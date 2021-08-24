@@ -1,0 +1,1 @@
+bash /installer/setup.sh
