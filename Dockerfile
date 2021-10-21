@@ -3,5 +3,4 @@ RUN wget https://www.multicraft.org/download/linux64 && tar -xvzf ./linux64 && r
 RUN apt-get update && apt-get install -y iproute2 zip
 COPY ./initialize.sh /initialize.sh
 COPY ./install.sh /installer/install.sh
-USER multicraft
 CMD chmod +x /initialize.sh && chmod +x /installer/install.sh && /initialize.sh
