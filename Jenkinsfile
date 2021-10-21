@@ -4,5 +4,6 @@ node {
   image.push()
   docker.withRegistry("https://ghcr.io/v2") {
       image.push()
+      docker.build("ghcr.io/siwatinc/multicraft-daemon:java8",'java8').push()
   }
 }
